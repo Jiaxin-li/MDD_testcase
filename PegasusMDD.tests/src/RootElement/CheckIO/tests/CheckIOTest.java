@@ -4,7 +4,7 @@ package RootElement.CheckIO.tests;
 
 import RootElement.CheckIO.CheckIO;
 import RootElement.CheckIO.CheckIOFactory;
-
+import RootElement.Booking.*;
 import junit.framework.TestCase;
 
 import junit.textui.TestRunner;
@@ -83,6 +83,8 @@ public class CheckIOTest extends TestCase {
 	@Override
 	protected void setUp() throws Exception {
 		setFixture(CheckIOFactory.eINSTANCE.createCheckIO());
+		Booking booking = sys.TestE.booking;
+		
 	}
 
 	/**
@@ -101,12 +103,12 @@ public class CheckIOTest extends TestCase {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see RootElement.CheckIO.CheckIO#payOrder(int)
-	 * @generated
+	 * 
 	 */
 	public void testPayOrder__int() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
+		assertTrue(fixture.payOrder(0));
 	}
 
 	/**
@@ -119,7 +121,8 @@ public class CheckIOTest extends TestCase {
 	public void testGenerateTotal__int() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
+		
+		assertEqual(fixture.generateTotal(0)==100);
 	}
 
 	/**
@@ -132,7 +135,7 @@ public class CheckIOTest extends TestCase {
 	public void testGetPaymentResult__int() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
+		//fail();
 	}
 
 	/**
@@ -145,7 +148,7 @@ public class CheckIOTest extends TestCase {
 	public void testCheckOut__int() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
+		//fail();
 	}
 
 	/**
@@ -158,7 +161,7 @@ public class CheckIOTest extends TestCase {
 	public void testCheckIn__int() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
+		//fail();
 	}
 
 } //CheckIOTest
