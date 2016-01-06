@@ -29,6 +29,7 @@ public class TestE {
 		gam = AccountFactory.eINSTANCE.createGuestAccountMangement();
 		rm = RoomFactory.eINSTANCE.createRoomManagement();
 		rtm = RoomFactory.eINSTANCE.createRoomTypeManagment();
-	}
-	
+		
+		cm.setCurrentCart(cart);
+	}	
 }
