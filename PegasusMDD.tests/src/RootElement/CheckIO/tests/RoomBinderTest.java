@@ -16,10 +16,11 @@ import junit.textui.TestRunner;
  * <p>
  * The following operations are tested:
  * <ul>
- *   <li>{@link RootElement.CheckIO.RoomBinder#addService(int) <em>Add Service</em>}</li>
+ *   <li>{@link RootElement.CheckIO.RoomBinder#bindService(RootElement.Service.Service) <em>Bind Service</em>}</li>
  *   <li>{@link RootElement.CheckIO.RoomBinder#bindRoom(RootElement.Room.Room) <em>Bind Room</em>}</li>
  *   <li>{@link RootElement.CheckIO.RoomBinder#SetServiceStatus(int, boolean) <em>Set Service Status</em>}</li>
- *   <li>{@link RootElement.CheckIO.RoomBinder#setRoomAvailability() <em>Set Room Availability</em>}</li>
+ *   <li>{@link RootElement.CheckIO.RoomBinder#setRoomAvailability(boolean) <em>Set Room Availability</em>}</li>
+ *   <li>{@link RootElement.CheckIO.RoomBinder#bindGuest(RootElement.Account.GuestAccount) <em>Bind Guest</em>}</li>
  * </ul>
  * </p>
  * @generated
@@ -96,13 +97,13 @@ public class RoomBinderTest extends TestCase {
 	}
 
 	/**
-	 * Tests the '{@link RootElement.CheckIO.RoomBinder#addService(int) <em>Add Service</em>}' operation.
+	 * Tests the '{@link RootElement.CheckIO.RoomBinder#bindService(RootElement.Service.Service) <em>Bind Service</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see RootElement.CheckIO.RoomBinder#addService(int)
+	 * @see RootElement.CheckIO.RoomBinder#bindService(RootElement.Service.Service)
 	 * @generated
 	 */
-	public void testAddService__int() {
+	public void testBindService__Service() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
 		fail();
@@ -135,13 +136,26 @@ public class RoomBinderTest extends TestCase {
 	}
 
 	/**
-	 * Tests the '{@link RootElement.CheckIO.RoomBinder#setRoomAvailability() <em>Set Room Availability</em>}' operation.
+	 * Tests the '{@link RootElement.CheckIO.RoomBinder#setRoomAvailability(boolean) <em>Set Room Availability</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see RootElement.CheckIO.RoomBinder#setRoomAvailability()
+	 * @see RootElement.CheckIO.RoomBinder#setRoomAvailability(boolean)
 	 * @generated
 	 */
-	public void testSetRoomAvailability() {
+	public void testSetRoomAvailability__boolean() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
+	}
+
+	/**
+	 * Tests the '{@link RootElement.CheckIO.RoomBinder#bindGuest(RootElement.Account.GuestAccount) <em>Bind Guest</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see RootElement.CheckIO.RoomBinder#bindGuest(RootElement.Account.GuestAccount)
+	 * @generated
+	 */
+	public void testBindGuest__GuestAccount() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
 		fail();

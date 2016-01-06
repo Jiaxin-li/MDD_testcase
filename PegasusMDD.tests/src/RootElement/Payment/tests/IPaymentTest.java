@@ -13,7 +13,7 @@ import junit.framework.TestCase;
  * <p>
  * The following operations are tested:
  * <ul>
- *   <li>{@link RootElement.Payment.IPayment#initiatePayment() <em>Initiate Payment</em>}</li>
+ *   <li>{@link RootElement.Payment.IPayment#initiatePayment(int) <em>Initiate Payment</em>}</li>
  *   <li>{@link RootElement.Payment.IPayment#commencePayment() <em>Commence Payment</em>}</li>
  * </ul>
  * </p>
@@ -60,13 +60,13 @@ public abstract class IPaymentTest extends TestCase {
 	}
 
 	/**
-	 * Tests the '{@link RootElement.Payment.IPayment#initiatePayment() <em>Initiate Payment</em>}' operation.
+	 * Tests the '{@link RootElement.Payment.IPayment#initiatePayment(int) <em>Initiate Payment</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see RootElement.Payment.IPayment#initiatePayment()
+	 * @see RootElement.Payment.IPayment#initiatePayment(int)
 	 * @generated
 	 */
-	public void testInitiatePayment() {
+	public void testInitiatePayment__int() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
 		fail();

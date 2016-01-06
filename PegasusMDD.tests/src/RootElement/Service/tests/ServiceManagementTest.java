@@ -17,6 +17,7 @@ import junit.textui.TestRunner;
  * The following operations are tested:
  * <ul>
  *   <li>{@link RootElement.Service.IService#getService(int) <em>Get Service</em>}</li>
+ *   <li>{@link RootElement.Service.IService#addService(RootElement.Service.Service) <em>Add Service</em>}</li>
  * </ul>
  * </p>
  * @generated
@@ -100,6 +101,19 @@ public class ServiceManagementTest extends TestCase {
 	 * @generated
 	 */
 	public void testGetService__int() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
+	}
+
+	/**
+	 * Tests the '{@link RootElement.Service.IService#addService(RootElement.Service.Service) <em>Add Service</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see RootElement.Service.IService#addService(RootElement.Service.Service)
+	 * @generated
+	 */
+	public void testAddService__Service() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
 		fail();

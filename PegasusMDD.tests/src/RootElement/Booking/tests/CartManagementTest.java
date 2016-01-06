@@ -16,11 +16,13 @@ import junit.textui.TestRunner;
  * <p>
  * The following operations are tested:
  * <ul>
- *   <li>{@link RootElement.Booking.IBooking#addBooking(RootElement.Account.GuestAccount, int, java.util.Date, java.util.Date, int, int) <em>Add Booking</em>}</li>
- *   <li>{@link RootElement.Booking.IBooking#editBooking(int) <em>Edit Booking</em>}</li>
+ *   <li>{@link RootElement.Booking.IBooking#addBooking(int, java.util.Date, java.util.Date, int) <em>Add Booking</em>}</li>
+ *   <li>{@link RootElement.Booking.IBooking#editBooking(int, int, java.util.Date, java.util.Date, int) <em>Edit Booking</em>}</li>
  *   <li>{@link RootElement.Booking.IBooking#deleteBooking(int) <em>Delete Booking</em>}</li>
  *   <li>{@link RootElement.Booking.IBooking#getBooking(int) <em>Get Booking</em>}</li>
  *   <li>{@link RootElement.Booking.IBooking#validateBooking(int) <em>Validate Booking</em>}</li>
+ *   <li>{@link RootElement.Booking.CartManagement#addCart(RootElement.Booking.Cart) <em>Add Cart</em>}</li>
+ *   <li>{@link RootElement.Booking.CartManagement#deleteCart(int) <em>Delete Cart</em>}</li>
  * </ul>
  * </p>
  * @generated
@@ -97,26 +99,26 @@ public class CartManagementTest extends TestCase {
 	}
 
 	/**
-	 * Tests the '{@link RootElement.Booking.IBooking#addBooking(RootElement.Account.GuestAccount, int, java.util.Date, java.util.Date, int, int) <em>Add Booking</em>}' operation.
+	 * Tests the '{@link RootElement.Booking.IBooking#addBooking(int, java.util.Date, java.util.Date, int) <em>Add Booking</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see RootElement.Booking.IBooking#addBooking(RootElement.Account.GuestAccount, int, java.util.Date, java.util.Date, int, int)
+	 * @see RootElement.Booking.IBooking#addBooking(int, java.util.Date, java.util.Date, int)
 	 * @generated
 	 */
-	public void testAddBooking__GuestAccount_int_Date_Date_int_int() {
+	public void testAddBooking__int_Date_Date_int() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
 		fail();
 	}
 
 	/**
-	 * Tests the '{@link RootElement.Booking.IBooking#editBooking(int) <em>Edit Booking</em>}' operation.
+	 * Tests the '{@link RootElement.Booking.IBooking#editBooking(int, int, java.util.Date, java.util.Date, int) <em>Edit Booking</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see RootElement.Booking.IBooking#editBooking(int)
+	 * @see RootElement.Booking.IBooking#editBooking(int, int, java.util.Date, java.util.Date, int)
 	 * @generated
 	 */
-	public void testEditBooking__int() {
+	public void testEditBooking__int_int_Date_Date_int() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
 		fail();
@@ -156,6 +158,32 @@ public class CartManagementTest extends TestCase {
 	 * @generated
 	 */
 	public void testValidateBooking__int() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
+	}
+
+	/**
+	 * Tests the '{@link RootElement.Booking.CartManagement#addCart(RootElement.Booking.Cart) <em>Add Cart</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see RootElement.Booking.CartManagement#addCart(RootElement.Booking.Cart)
+	 * @generated
+	 */
+	public void testAddCart__Cart() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
+	}
+
+	/**
+	 * Tests the '{@link RootElement.Booking.CartManagement#deleteCart(int) <em>Delete Cart</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see RootElement.Booking.CartManagement#deleteCart(int)
+	 * @generated
+	 */
+	public void testDeleteCart__int() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
 		fail();

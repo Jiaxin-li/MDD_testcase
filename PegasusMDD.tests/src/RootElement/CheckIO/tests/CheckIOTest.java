@@ -16,7 +16,7 @@ import junit.textui.TestRunner;
  * <p>
  * The following operations are tested:
  * <ul>
- *   <li>{@link RootElement.CheckIO.CheckIO#payOrder() <em>Pay Order</em>}</li>
+ *   <li>{@link RootElement.CheckIO.CheckIO#payOrder(int) <em>Pay Order</em>}</li>
  *   <li>{@link RootElement.CheckIO.CheckIO#generateTotal(int) <em>Generate Total</em>}</li>
  *   <li>{@link RootElement.CheckIO.CheckIO#getPaymentResult(int) <em>Get Payment Result</em>}</li>
  *   <li>{@link RootElement.CheckIO.CheckIO#CheckOut(int) <em>Check Out</em>}</li>
@@ -97,13 +97,13 @@ public class CheckIOTest extends TestCase {
 	}
 
 	/**
-	 * Tests the '{@link RootElement.CheckIO.CheckIO#payOrder() <em>Pay Order</em>}' operation.
+	 * Tests the '{@link RootElement.CheckIO.CheckIO#payOrder(int) <em>Pay Order</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see RootElement.CheckIO.CheckIO#payOrder()
+	 * @see RootElement.CheckIO.CheckIO#payOrder(int)
 	 * @generated
 	 */
-	public void testPayOrder() {
+	public void testPayOrder__int() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
 		fail();

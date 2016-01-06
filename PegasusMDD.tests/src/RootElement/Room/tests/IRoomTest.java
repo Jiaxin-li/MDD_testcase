@@ -14,8 +14,9 @@ import junit.framework.TestCase;
  * The following operations are tested:
  * <ul>
  *   <li>{@link RootElement.Room.IRoom#getAvailiableRoom(int) <em>Get Availiable Room</em>}</li>
- *   <li>{@link RootElement.Room.IRoom#addRoom() <em>Add Room</em>}</li>
+ *   <li>{@link RootElement.Room.IRoom#addRoom(RootElement.Room.Room) <em>Add Room</em>}</li>
  *   <li>{@link RootElement.Room.IRoom#getRoom(int) <em>Get Room</em>}</li>
+ *   <li>{@link RootElement.Room.IRoom#getRoomNr(int) <em>Get Room Nr</em>}</li>
  * </ul>
  * </p>
  * @generated
@@ -74,13 +75,13 @@ public abstract class IRoomTest extends TestCase {
 	}
 
 	/**
-	 * Tests the '{@link RootElement.Room.IRoom#addRoom() <em>Add Room</em>}' operation.
+	 * Tests the '{@link RootElement.Room.IRoom#addRoom(RootElement.Room.Room) <em>Add Room</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see RootElement.Room.IRoom#addRoom()
+	 * @see RootElement.Room.IRoom#addRoom(RootElement.Room.Room)
 	 * @generated
 	 */
-	public void testAddRoom() {
+	public void testAddRoom__Room() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
 		fail();
@@ -94,6 +95,19 @@ public abstract class IRoomTest extends TestCase {
 	 * @generated
 	 */
 	public void testGetRoom__int() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
+	}
+
+	/**
+	 * Tests the '{@link RootElement.Room.IRoom#getRoomNr(int) <em>Get Room Nr</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see RootElement.Room.IRoom#getRoomNr(int)
+	 * @generated
+	 */
+	public void testGetRoomNr__int() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
 		fail();
