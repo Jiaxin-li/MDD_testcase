@@ -49,10 +49,10 @@ public class CodegenAllTests extends TestSuite {
 		suite.addTest(BookingTests.suite());
 		suite.addTest(AccountTests.suite());
 		suite.addTest(RoomTests.suite());
+		suite.addTest(ScheduleTests.suite());
 		suite.addTest(ServiceTests.suite());
 		suite.addTest(TaskTests.suite());
 		suite.addTest(CheckIOTests.suite());
-		suite.addTest(ScheduleTests.suite());
 		return suite;
 	}
 

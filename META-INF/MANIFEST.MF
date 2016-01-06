@@ -14,10 +14,10 @@ Export-Package: RootElement.Account.tests,
  RootElement.Room.tests,
  RootElement.Schedule.tests,
  RootElement.Service.tests,
- RootElement.Task.tests,
- org.eclipse.uml2.types.tests
+ RootElement.Task.tests
 Require-Bundle: org.eclipse.core.runtime,
  PegasusMDD;visibility:=reexport,
+ org.eclipse.uml2.types;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
  org.junit;visibility:=reexport
 Bundle-ActivationPolicy: lazy
