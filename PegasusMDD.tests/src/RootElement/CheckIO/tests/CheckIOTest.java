@@ -122,7 +122,7 @@ public class CheckIOTest extends TestCase {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
 		
-		assertEqual(fixture.generateTotal(0)==100);
+		
 	}
 
 	/**
