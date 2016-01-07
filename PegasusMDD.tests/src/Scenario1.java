@@ -47,17 +47,21 @@ public class Scenario1 {
 
 	@Test
 	public void test() {
-		//assertTrue(rtm.addRoomType("single", 50, 1));
-		EList<RoomType> roomTypes = rtm.getRoomtypes();
-		RoomType roomType = RoomFactory.eINSTANCE.createRoomType();
-		roomType.setNumberOfBeds(1);
-		roomType.setPrice(50);
-		roomType.setRoomTypeID(0);
-		roomType.setRoomTypeName("single");
-		roomTypes.add(roomType); 
+		// add a room type into the system
+		int roomTypeID = rtm.addRoomType("single", 50, 1);
+		RoomType roomType = rtm.getRoomType(roomTypeID);
 		
+		// add a room into the system
+		Room room = RoomFactory.eINSTANCE.createRoom();
+		room.setAvailable(true);
+		room.setFloorNumber(1);
+		room.setRoomNumber(1);
+		room.setRoomType(roomType);
+		rm.addRoom(room);
+		
+		// register the room into the schedule calendar
 		AvailablityMap av = ScheduleFactory.eINSTANCE.createAvailablityMap(); 
-		av.setAvailable(100);
+		av.setAvailable(1);
 		Calendar calendar = Calendar.getInstance();
 		calendar.set(2016, 1, 8);
 		Date ddl = calendar.getTime(); 
@@ -65,27 +69,32 @@ public class Scenario1 {
 		av.setRoomType(roomType);
 		scdl.getSchedule().add(av);
 		
-		Room room = RoomFactory.eINSTANCE.createRoom();
-		room.setAvailable(true);
-		room.setFloorNumber(1);
-		room.setRoomNumber(1);
-		room.setRoomType(roomType);
-		
-		rm.addRoom(room);
-		
 		calendar.set(2016, 1, 7);
 		Date checkIn = calendar.getTime();
 		
 		calendar.set(2016, 1, 9);
 		Date checkOut = calendar.getTime();
 		
-		assertTrue(cm.addBooking(0, checkIn, checkOut, 1));
+		int nrOfRooms = 1;
+		int bookingID = cm.addBooking(roomTypeID, checkIn, checkOut, nrOfRooms);
 		
-		assertNotNull(cm.getBooking(0));
+		// switched order of dates to cause an error
+		assertFalse(cm.editBooking(bookingID, roomTypeID, checkOut, checkIn, nrOfRooms));
 		
-		assertTrue(check.CheckIn(0));
+		assertNotNull(cm.getBooking(bookingID));
 		
-		assertTrue(check.CheckOut(0));
+		assertTrue(check.CheckIn(bookingID));
+		
+		assertTrue(check.CheckOut(bookingID));
+		
+		assertTrue(cm.deleteBooking(bookingID));
+		assertNull(cm.getBooking(bookingID));
+		assertNull(cm.getBooking(10));
+		
+		// test getting booking when cart is not set yet
+		cm.setCurrentCart(null);
+		assertNull(cm.getBooking(bookingID));
+		assertFalse(cm.deleteBooking(bookingID));
 	}
 
 }
