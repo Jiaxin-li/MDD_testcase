@@ -85,11 +85,17 @@ public class Scenario1 {
 		
 		assertTrue(check.CheckIn(bookingID));
 		
+		int fakeID = 10;
+		
+		assertFalse(check.CheckIn(fakeID));
+		
 		assertTrue(check.CheckOut(bookingID));
+		
+		assertFalse(check.CheckOut(fakeID));
 		
 		assertTrue(cm.deleteBooking(bookingID));
 		assertNull(cm.getBooking(bookingID));
-		assertNull(cm.getBooking(10));
+		assertNull(cm.getBooking(fakeID));
 		
 		// test getting booking when cart is not set yet
 		cm.setCurrentCart(null);
